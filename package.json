@@ -1,11 +1,13 @@
 {
   "name": "imitation-chrome-test",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/unicode6674/imitation-chrome-test.git"
   },
   "main": "lib/chromeTabs.common.js",
+  "private": false,
+  "license": "ISC",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build-dev": "vue-cli-service build",
@@ -14,9 +16,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@types/chroma-js": "^2.0.0",
     "@types/lodash": "^4.14.157",
-    "chroma-js": "^2.1.0",
     "core-js": "^3.6.5",
     "element-ui": "^2.13.2",
     "less-loader": "^6.1.2",
@@ -53,7 +53,6 @@
     "eslint-plugin-vue": "^6.2.2",
     "tern": "^0.24.3",
     "typedoc": "^0.19.1",
-    "typescript": "~3.9.3",
     "vue-template-compiler": "^2.6.11"
   }
 }
