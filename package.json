@@ -1,6 +1,6 @@
 {
   "name": "imitation-chrome-test",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/unicode6674/imitation-chrome-test.git"
@@ -53,6 +53,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "tern": "^0.24.3",
     "typedoc": "^0.19.1",
+    "typescript": "~3.9.3",
     "vue-template-compiler": "^2.6.11"
   }
 }

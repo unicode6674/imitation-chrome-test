@@ -56,25 +56,21 @@
           <div class="tabs-main">
             <!-- 正常显示状态 -->
             <div v-if="editPipelineId !== tab.id" class="tabs-label">
-              <a-tooltip placement="top" :mouse-enter-delay="1">
-                <template slot="title">
-                  <span>{{ tab.name }}</span>
-                </template>
-                <span
-                    class="tabs-label-text"
-                    @click="editPipelineName(tab.id, tab.name)"
-                >{{ tab.name }}</span>
-              </a-tooltip>
+              <span
+                  class="tabs-label-text"
+                  @click="editPipelineName(tab.id, tab.name)"
+              >{{ tab.name }}</span>
+
               <!-- 编辑 icon -->
-              <a-icon
+              <a
                   v-if="tab.id === value && allowedEdit"
                   type="edit"
                   class="tab-name-edit-icon"
-                  @click="editPipelineName(tab.id, tab.name)" />
+                  @click="editPipelineName(tab.id, tab.name)" >E</a>
             </div>
             <!-- 编辑状态 -->
             <div v-else class="tabs-label-edit">
-              <a-input
+              <input
                   v-model="activeEditPipelineName"
                   v-focus
                   type="text"
