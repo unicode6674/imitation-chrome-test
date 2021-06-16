@@ -1,4 +1,4 @@
-# vis-components version 2.0.0
+# imitation-chrome-test version 0.1.0
 
 ## Project setup
 ```
