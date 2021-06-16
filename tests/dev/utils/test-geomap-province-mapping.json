@@ -1,0 +1,26 @@
+[
+  {
+    "province": "浙江",
+    "value": 11111
+  },
+  {
+    "province": "上海",
+    "value": 22222
+  },
+  {
+    "province": "北京",
+    "value": 20000
+  },
+  {
+    "province": "江苏",
+    "value": 10000
+  },
+  {
+    "province": "安徽",
+    "value": 5000
+  },
+  {
+    "province": "海南",
+    "value": 1000
+  }
+]

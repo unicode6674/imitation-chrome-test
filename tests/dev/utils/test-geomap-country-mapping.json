@@ -1,0 +1,22 @@
+[
+  {
+    "country": "中国",
+    "value": 100000
+  },
+  {
+    "country": "美国",
+    "value": 2000
+  },
+  {
+    "country": "法国",
+    "value": 10000
+  },
+  {
+    "country": "日本",
+    "value": 100
+  },
+  {
+    "country": "俄罗斯",
+    "value": 5000
+  }
+]

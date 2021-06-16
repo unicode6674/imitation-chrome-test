@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>角度偏移测试</title>
+</head>
+
+<body>
+  <svg width="500" height="500" class="svg">
+    <circle cx="250" cy="250" fill="red" r="100"></circle>
+    <circle id="move" cx="250" cy="250" fill="blue" r="4"></circle>
+  </svg>
+
+</body>
+<script>
+  window.onload = function () {
+    let move = document.getElementById('move');
+
+    /**
+     * 给定一个点坐标 {x: number， y: number}, 以及一个角度 angle  以及 偏移量，求位移后的坐标
+     **/
+    function moveByAngleDisplacement(point, angle, moveLength) {
+      const angleCalc = (angle - Math.PI / 2) % (2 * Math.PI);
+      return {
+        x: point.x + moveLength * Math.cos(angleCalc),
+        y: point.y + moveLength * Math.sin(angleCalc)
+      };
+    }
+
+    let angle = 0;
+    setInterval(function () {
+      angle = angle + 0.01;
+      let point = moveByAngleDisplacement({
+        x: 250,
+        y: 250
+      }, angle, 100);
+      move.setAttribute('cx', point.x);
+      move.setAttribute('cy', point.y);
+    }, 10)
+  }
+</script>
+
+</html>

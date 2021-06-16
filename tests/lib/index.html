@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>类库测试</title>
+  <script src="../../lib/visComponents.umd.js"></script>
+</head>
+<style>
+</style>
+
+<body>
+  <div id="bar-chart" class="chart-box"></div>
+  <div id="pie-chart" class="chart-box"></div>
+</body>
+<script>
+  window.onload = function () {
+    console.log('visComponents', visComponents);
+    let options = {
+      size: [500, 500],
+      value: [{
+          label: "测试1",
+          value: 10
+        },
+        {
+          label: "测试2",
+          value: 20
+        },
+        {
+          label: "测试3",
+          value: 30
+        },
+        {
+          label: "测试4",
+          value: 30
+        },
+        {
+          label: "测试5",
+          value: 30
+        },
+      ]
+    };
+    const barchart = new visComponents.default.components.BarChart(options, document.getElementById('bar-chart'))
+    barchart.$set('value', value, (error) => {
+
+    })
+    const piechart = new visComponents.default.components.PieChart(options, document.getElementById('pie-chart'))
+  }
+</script>
+
+</html>
